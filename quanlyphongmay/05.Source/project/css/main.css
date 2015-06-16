@@ -72,7 +72,7 @@ br {
 
 /* the styles for the div tags that divide the page into sections */
 #page {
-    width: 760px;
+    width: 1000px;
     margin: 0 auto;
     background-color: white;
     border: 1px solid rgb(119, 75, 77);

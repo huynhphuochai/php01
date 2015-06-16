@@ -19,7 +19,7 @@ $uri = $_SERVER['REQUEST_URI'];
 $dirs = explode('/', $uri);
 
 //Khi thư mục ứng dụng là 1 cấp so với www
-$app_path = '/' . $dirs[1] . '/';
+$app_path = '/' . $dirs[1] . '/' . $dirs[2] . '/' . $dirs[3] . '/' . $dirs[4] . '/';
 // Biến app_path lấy đường dẫn hiện tại của ứng dụng.
 set_include_path($doc_root . $app_path);
 
