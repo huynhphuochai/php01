@@ -2,11 +2,12 @@
 /**
 //class loai phan mem
 */
- 	private $ID;
-    private $TenLoai;
-    private $GhiChu;
+ 	
 class LoaiPhanMem
 {
+	private $ID;
+    private $TenLoai;
+    private $GhiChu;
 	
 	function __construct($ID,$TenLoai,$GhiChu)
 	{
