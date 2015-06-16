@@ -1,8 +1,5 @@
 <?php
-/**
-//class loai phan mem
-*/
- 	
+
 class LoaiPhanMem
 {
 	private $ID;
