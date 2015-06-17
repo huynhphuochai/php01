@@ -80,5 +80,55 @@ include('../entity/phanmem.php');
 				return $e->getMessage();	
 			}
 		}
+		
+		//xoa PM
+		
+		public static function delete_PhanMem($LoaiPhanMem){
+			$db = Database::getDB();
+			$query = "delete * from phanmem where LoaiPhanMem = 'loai'";
+			
+			try{
+				$t = $db->prepare($query);
+				$t->bindValue(':loai',$LoaiPhanMem);
+				$row_couut = $t->execute();
+				$t->closeCursor();
+				return $row_couut;
+			}
+			catch(PDOException $e){
+					return $e->getMessage();	
+			}
+		}
+		
+		//sua PM
+		
+		public static function update_PhanMem($ID,$LoaiPhanMem,$TenPhanMem,$ChucNang,$PhienBan,$GhiChu){
+			$db = Database::getDB();
+			$query = "update phanmem SET 
+							LoaiPhanMem = ':loaiphanmem',
+							TenPhanMem = ':tenphanmem',
+							ChucNang = ':chucnang',
+							PhienBan = ':phienban',
+							GhiChu = ':ghichu'
+					where
+							ID = ':id'
+							";	
+			try{
+				$t = $db->prepare($query);
+				$t->bindValue('id',$ID);
+				$t->bindValue('tenphanmem',$TenPhanMem);
+				$t->bindValue('chucnang',$ChucNang);
+				$t->bindValue('phienban',$PhienBan);
+				$t->bindValue('ghichu',$GhiChu);
+				$t->bindValue('loaiphanmem',$LoaiPhanMem);
+				
+				$row_count = $t->execute();
+				$t->closeCursor();
+				
+				return $row_count;
+			}
+			catch(PDOException $e){
+				return $e->getMessage();	
+			}
+		}
 	}
 ?>
