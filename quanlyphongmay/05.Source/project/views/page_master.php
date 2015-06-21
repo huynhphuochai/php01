@@ -55,9 +55,9 @@
         </div>
     </div>
     <!-- Pagination -->
-    <?php include 'sidebar.php'; ?>
+    <?php include 'left_sidebar.php'; ?>
     <?php include 'content.php'; ?>
-    <?php include 'rightsidebar.php'; ?>
+    <?php include 'right_sidebar.php'; ?>
     <!-- Pagination -->
     <div class="row text-center">
         <div class="col-lg-12">
