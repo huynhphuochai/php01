@@ -1,6 +1,6 @@
 <?php
-include('../includes/database.php');
-include('../entity/donvi.php');
+include('includes/database.php');
+include('entity/donvi.php');
 	
 	class DonVi_DB
 	{

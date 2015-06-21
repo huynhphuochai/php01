@@ -6,8 +6,26 @@
                 Trang chủ
             </a>
         </li>
-        <li>
-            <a href="<?php echo $app_path; ?>admin">Admin</a>
-        </li>
     </ul>
+<h2>Danh mục</h2>
+<ul>
+    <li>
+        <a href="<?php echo $app_path; ?>modules/dsdonvi">Đơn vị</a>
+    </li>
+    <li>
+        <a href="#">
+            Phần mềm
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            Giảng viên
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            Đơn vị
+        </a>
+    </li>
+</ul>
 </div>
