@@ -1,4 +1,4 @@
-<div id="sidebar">
+<div class="col-md-3">
     <h2>Quản trị</h2>
     <ul>
         <li>

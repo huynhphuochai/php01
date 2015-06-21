@@ -13,7 +13,7 @@
             <a class="navbar-brand" href="#">SHOP ONLINE</a>
         </div>
 
-        <!-- Nav collapse -->
+        <!-- Nav câp 1 -->
         <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav">
                 <li>
@@ -33,10 +33,13 @@
             </div>
         </div>
         <!-- /.navbar-collapse -->
+
+
     </div>
     <!-- /.container -->
 </nav>
 <!-- /Navigation -->
+
 
 <div class="container">
     <!-- /Banner -->
@@ -51,6 +54,10 @@
             <h1 class="page-header">Tổ quản lý phòng máy - Khoa Kỹ Thuật - Công Nghệ - Môi Trường</h1>
         </div>
     </div>
+    <!-- Pagination -->
+    <?php include 'sidebar.php'; ?>
+    <?php include 'content.php'; ?>
+    <?php include 'rightsidebar.php'; ?>
     <!-- Pagination -->
     <div class="row text-center">
         <div class="col-lg-12">
@@ -81,6 +88,7 @@
     </div>
     <!-- /.row -->
 </div>
+
 <!-- jQuery -->
 <script src="../libs/jquery/jquery-1.11.2.min.js"></script>
 
