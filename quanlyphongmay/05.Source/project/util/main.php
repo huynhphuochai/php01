@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$error_message = "";
+
 // to ensure that all errors/warnings/notices are displayed
 error_reporting(E_ALL|E_STRICT);
 
@@ -26,13 +28,13 @@ set_include_path($doc_root . $app_path);
 // Hàm hiển thị các lỗi
 function display_db_error($error_message) {
     global $app_path;
-    include 'error/db_error.php';
+    include 'errors/db_error.php';
     exit;
 }
 
 function display_error($error_message) {
     global $app_path;
-    include 'error/error.php';
+    include 'errors/error.php';
     exit;
 }
 

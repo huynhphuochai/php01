@@ -12,8 +12,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo $app_path; ?>css/main.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $app_path; ?>css/text.css">
-       <link rel="stylesheet" type="text/css" href="<?php echo $app_path; ?>css/grid.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $app_path; ?>css/grid.css">
 </head>
 
 <body>
-    
+
