@@ -2,11 +2,10 @@
 require_once('../../util/main.php');
 require_once('../../model/donvidb.php');
 
-if (isset($_POST['action'])) {
-    $action = $_POST['action'];
-} elseif (isset($_GET['action'])) {
-    $action = $_GET['action'];
-} else {
+if (isset($_REQUEST['action'])) {
+    $action = $_REQUEST['action'];
+} 
+else {
     $action = 'hienthi_ds_donvi';
 }
 

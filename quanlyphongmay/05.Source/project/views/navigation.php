@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <!-- Nav -->
         <div class="navbar-header">
@@ -16,13 +16,7 @@
         <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-info-sign"></span> Giới Thiệu</a>
-                </li>
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-calendar"></span>Tin Tức</a>
-                </li>
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-envelope"></span>Liên Hệ</a>
+                    <a href="#"><span class="glyphicon glyphicon-home" ></span>&nbsp;Trang chủ</a>
                 </li>
             </ul>
 
